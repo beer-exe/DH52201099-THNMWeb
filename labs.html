@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOANVIPCINEMA | Lab Thực Hành</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/logo.ico">
+
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+    <!-- theme-change-->
+    <script src="assets/js/theme-change.js" defer></script>
+    <script src="assets/js/owl.carousel.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+
+    <!-- responsive tabs -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- script for move on top-->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="site-header" class="w3l-header fixed-top">
+        <!--/nav-->
+        <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+            <div class="container">
+                <h1><a class="navbar-brand" href="index.html">
+                        <img class="logo" src="assets/images/logo/logo.png" alt="logo">
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Phim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Về Chúng Tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Liên Hệ</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="labs.html">Lab Thực Hành</a>
+                        </li>
+                    </ul>
+
+                    <!--/search-right-->
+                    <!--/search-right-->
+                    <div class="search-right">
+                        <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Tìm Kiếm <span
+                                class="fa fa-search ml-3" aria-hidden="true"></span></a>
+                        <!-- search popup -->
+                        <div id="search" class="pop-overlay">
+                            <div class="popup">
+                                <form action="#" method="post" class="search-box">
+                                    <input type="search" placeholder="Nhập từ khóa tìm kiếm..." name="search"
+                                        required="required" autofocus="">
+                                    <button type="submit" class="btn"><span class="fa fa-search"
+                                            aria-hidden="true"></span></button>
+                                </form>
+                                <div class="browse-items">
+                                    <h3 class="hny-title two mt-md-5 mt-4">Tìm kiếm thường xuyên:</h3>
+                                    <ul class="search-items">
+                                        <li><a href="movies.html">Hành Động</a></li>
+                                        <li><a href="movies.html">Kịch</a></li>
+                                        <li><a href="movies.html">Gia Đình</a></li>
+                                        <li><a href="movies.html">Giật Gân</a></li>
+                                        <li><a href="movies.html">Hài Kịch</a></li>
+                                        <li><a href="movies.html">Lãng Mạn</a></li>
+                                        <li><a href="movies.html">Tv-Series</a></li>
+                                        <li><a href="movies.html">Kinh Dị</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="close" href="#close">×</a>
+                        </div>
+                        <!-- /search popup -->
+                        <!--/search-right-->
+
+                    </div>
+                    <div class="Login_SignUp" id="login"
+                        style="font-size: 2rem ; display: inline-block; position: relative;">
+                        <!-- <li class="nav-item"> -->
+                        <a class="nav-link" href="sign_in.html"><i class="fa fa-user-circle-o"></i></a>
+                        <!-- </li> -->
+                    </div>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--/breadcrumbs -->
+    <div class="w3l-breadcrumbs">
+        <nav id="breadcrumbs" class="breadcrumbs">
+            <div class="container page-wrapper">
+                <a href="index.html">Trang Chủ</a> » <span class="breadcrumb_last" aria-current="page">Lab Thực Hành</span>
+            </div>
+        </nav>
+    </div>
+    
+    	<!--grids-sec1-->
+	<section class="w3l-grids">
+		<div class="grids-main py-5">
+			<div class="container py-lg-4">
+				<div class="w3l-populohny-grids">
+                    <!-- LAB 01 -->
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab01" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab01: HTML</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab01" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 01</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<a href="labs/Lab01/lab1_bai3.html">Lab01 Bài 3</a>
+                                            <br><br>
+                                            <a href="labs/Lab01/lab1_bai4.html">Lab01 Bài 4</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 02 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<figure>
+								<img class="img-fluid" src="assets/images/lab.png" alt="">
+							</figure>
+							<a href=".Lab02" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab02: Table & List</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab02" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 02</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<a href="labs/Lab02/lab02_bai1.html">Lab02 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab02/lab02_bai2.html">Lab02 Bài 2</a>
+                                            <br><br>
+                                            <a href="labs/Lab02/index.html">Lab02 Bài 3</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 03 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab03" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab03: Frame & Form</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab03" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 03</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<a href="labs/Lab03/Vi_du_Lab01/lab03_bai1.html">Lab03 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab03/Vi_du_Lab01/lab03_bai2.html">Lab03 Bài 2</a>
+                                            <br><br>
+                                            <a href="labs/Lab03/Vi_du_Lab01/lab03_bai3.html">Lab03 Bài 2</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 04 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab04" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab04: CSS cơ bản</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab04" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 04</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<a href="labs/Lab04/Vi_du/lab04_bai1.html">Lab04 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab04/Vi_du/lab04_bai2.html">Lab04 Bài 2</a>
+                                             <br><br>
+                                            <a href="labs/Lab04/Vi_du/lab04_bai3.html">Lab04 Bài 3</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 05 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab05" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab05: Các thuộc tính CSS</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab05" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 05</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+                                            <a href="labs/Lab05/lab05_menu.html">Lab05 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab05/Bai_2/index.html">Lab05 Bài 2</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 06 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab06" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab06: Xây dựng layout responsive bằng CSS</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab06" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 06</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+                                            <a href="labs/Lab06/Bai_1/lab06_menu_responsive.html">Lab06 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab06/Bai_2/lab06_bai2.html">Lab06 Bài 2</a>
+                                            <br><br>
+                                            <a href="labs/Lab06/Bai_3/lab06_bai3.html">Lab06 Bài 3</a>
+                                            <br><br>
+                                            <a href="labs/Lab06/Bai_4/lab06_bai4.html">Lab06 Bài 4</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 07 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab07" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab07: Javascript</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab07" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 07</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<a href="labs/Lab07/Vi_du/index.html">Lab07 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab07/demo_bai_2/index.html">Lab07 Bài 2</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+                    <!-- LAB 08 -->
+                    <div class="item vhny-grid">
+						<div class="box16 mb-0">
+                                <figure>
+                                    <img class="img-fluid" src="assets/images/lab.png" alt="">
+                                </figure>
+							<a href=".Lab08" data-toggle="modal">
+								<div class="box-content">
+									<h3 class="title">Lab08: Javascript nâng cao</h3>
+								</div>
+							</a>
+							<!-- Modal -->
+							<div class="modal fade Lab08" id="myModal" tabindex="-1" role="dialog"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content" id="mymodalcontent">
+										<div class="modal-header">
+											<h4 class="modal-title" id="exampleModalLongTitle">CHI TIẾT LAB 08</h4>
+											<button type="button" class="closebtn" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body" id="dynamic-content">
+											<a href="labs/Lab08/Lab08_Bai1.html">Lab08 Bài 1</a>
+                                            <br><br>
+                                            <a href="labs/Lab08/Lab08_Bai2.html">Lab08 Bài 2</a>
+                                            <br><br>
+                                            <a href="labs/Lab08/Lab08_Bai3.html">Lab08 Bài 3</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- modal end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- footer -->
+    <footer class="w3l-footer">
+        <section class="footer-inner-main">
+            <div class="footer-hny-grids py-5">
+                <div class="container py-lg-4">
+                    <div class="text-txt">
+                        <div class="right-side">
+                            <div class="row footer-links">
+                                <div class="col-md-3 col-sm-6 sub-two-right mt-5">
+                                    <h6>Phim</h6>
+                                    <ul>
+                                        <li><a href="#">Phim</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">English Movies</a></li>
+                                        <li><a href="#">Trailer</a></li>
+                                        <li><a href="#">Phim Sắp Chiếu</a></li>
+                                        <li><a href="Contact_Us.html">Liên Hệ Chúng Tôi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-sm-6 sub-two-right mt-5">
+                                    <h6>Thông Tin</h6>
+                                    <ul>
+                                        <li><a href="index.html">Trang Chủ</a> </li>
+                                        <li><a href="about.html">Về Chúng Tôi</a> </li>
+                                        <li><a href="#">Tv Series</a> </li>
+                                        <li><a href="#">Blogs</a> </li>
+                                        <li><a href="sign_in.html">Đăng Nhập</a></li>
+                                        <li><a href="sign_up.html">Đăng Kí Tài Khoản</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-sm-6 sub-two-right mt-5">
+                                    <h6>Chi Nhánh</h6>
+                                    <ul>
+                                        <li><a href="#">Việt Nam</a></li>
+                                        <li><a href="#">Pháp</a></li>
+                                        <li><a href="#">Vương quốc Anh</a></li>
+                                        <li><a href="#">Hoa Kỳ</a></li>
+                                        <li><a href="#">Hàn Quốc</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-6 sub-two-right mt-5">
+                                    <h6>Cập Nhật Tin Tức Mới Nhất</h6>
+                                    <form action="#" class="subscribe mb-3" method="post">
+                                        <input type="email" name="email" placeholder="Nhập email của bạn" required="">
+                                        <button><span class="fa fa-envelope-o"></span></button>
+                                    </form>
+                                    <p>Nhập email của bạn và nhận tin tức mới nhất, cập nhật và ưu đãi đặc biệt từ chúng
+                                        tôi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row footer-about">
+                                <div class="col-md-12 col-12 footer-img mb-lg-0 mb-4">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11087.31525891653!2d106.68132754794783!3d10.737728044349366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1747046565641!5m2!1svi!2s"
+                                        width="100%" height="450" style="border:0;" allowfullscreen="0" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="below-section">
+                <div class="container">
+                    <div class="footer">
+                        <div class="columns text-lg-left">
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Họ và tên: Nguyễn Phước
+                                Nghĩa</p>
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Mã sinh viên: DH52201099</p>
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Email:
+                                dh52201099@student.stu.edu.vn</p>
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Lớp: D22_TH02</p>
+                        </div>
+
+                        <ul class="social text-lg-right">
+                            <li><a href="https://www.facebook.com" target="_blank"><span
+                                        class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><span
+                                        class="fa fa-instagram"></span></a></li>
+                            <li><a href="https://x.com" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.google.com" target="_blank"><span class="fa fa-google"></span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-arrow-up" aria-hidden="true"></span>
+            </button>
+        </section>
+    </footer>
+</body>
+
+</html>

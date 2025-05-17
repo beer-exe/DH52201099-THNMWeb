@@ -1,0 +1,220 @@
+/* @import url('https://fonts-googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap'); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+  
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #03080a; */
+}
+
+.formcontainer {
+    width: 70%;
+    margin: 0 auto;
+    background: var(--theme-bg);
+}
+
+.formcontainer h4 {
+    position: relative;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--theme-blue);
+    /*#127681*/
+    text-align: center !important;
+    font-family: 'Open Sans', sans-serif
+}
+
+.formcontainer h3 {
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--theme-title);
+    /*#fff*/
+    text-transform: uppercase;
+    text-align: center !important;
+    font-weight: 700;
+}
+
+.formcontainer p {
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3rem !important;
+    text-align: center !important;
+    color: var(--theme-para);
+    /*#888*/
+}
+
+.formcontainer .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.formcontainer .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.formcontainer .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: var(--theme-rose);
+    /*#df0e62*/
+}
+
+.formcontainer .row100 .inputBox input,
+.formcontainer .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.formcontainer .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    color: #888;
+
+}
+
+.formcontainer .row100 .inputBox .text
+
+/* .formcontainer .row100 .inputBox input:valid + .text */
+    {
+    top: -35px;
+    left: -10px;
+}
+
+.formcontainer .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--theme-rose);
+    /*#df0e62*/
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.formcontainer .row100 .inputBox input:focus~.line
+
+/* .formcontainer .row100 .inputBox input:valid ~ .line */
+    {
+    height: 100%;
+    /* transition: 0.5s; */
+}
+
+.formcontainer .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.formcontainer .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.formcontainer .row100 .inputBox textarea:focus+.text
+
+/* .formcontainer .row100 .inputBox textarea:valid + .text */
+    {
+    top: -35px;
+    left: -10px;
+}
+
+.formcontainer .row100 .inputBox textarea:focus~.line
+
+/* .formcontainer .row100 .inputBox textarea:valid ~ .line */
+    {
+    height: 100%;
+}
+
+.formcontainer .row100 .col .submitbutton {
+    text-align: right !important;
+    margin-top: 0.5rem !important;
+}
+
+.formcontainer .row100 .col .submitbutton button {
+    -webkit-appearance: none;
+    outline: none;
+    overflow: visible;
+    margin: 0;
+}
+
+/* .formcontainer .row100 .col .submitbutton .btn {
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+} */
+
+.formcontainer .row100 .col .submitbutton .btn {
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0px 30px;
+    color: var(--theme-white);
+    /*#fff*/
+    height: 50px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    border-radius: 6px;
+    background-color: var(--theme-rose);
+    /*#df0e62*/
+    border: 2px solid var(--theme-rose);
+    /*#df0e62*/
+}
+  /* input:not(:placeholder-shown) {
+    height: 100%;
+    background: var(--theme-rose);
+  }
+  
+  input:placeholder-shown {
+    border-color: red;
+  } */
+/* input[type = "submit"]
+{
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #df0e62;    /* to change*
+    color: #888;
+    font-size: 18px;
+    border-radius: 2px;
+} */

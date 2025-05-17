@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOANVIPCINEMA | Về Chúng Tôi</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/logo.ico">
+
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+
+    <!-- theme-change-->
+    <script src="assets/js/theme-change.js" defer></script>
+    <script src="assets/js/owl.carousel.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+
+    <!-- responsive tabs -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- script for move on top-->
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- change logo color -->
+    <style>
+        #logo {
+            filter: invert(var(--theme-logo-bg));
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="site-header" class="w3l-header fixed-top">
+        <!--/nav-->
+        <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+            <div class="container">
+                <h1><a class="navbar-brand" href="index.html">
+                        <img class="logo" src="assets/images/logo/logo.png" alt="logo">
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Phim</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">Về Chúng Tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Liên Hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="labs.html">Lab Thực Hành</a>
+                        </li>
+                    </ul>
+
+                    <!--/search-right-->
+                    <!--/search-right-->
+                    <div class="search-right">
+                        <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Tìm Kiếm <span
+                                class="fa fa-search ml-3" aria-hidden="true"></span></a>
+                        <!-- search popup -->
+                        <div id="search" class="pop-overlay">
+                            <div class="popup">
+                                <form action="#" method="post" class="search-box">
+                                    <input type="search" placeholder="Nhập từ khóa tìm kiếm..." name="search"
+                                        required="required" autofocus="">
+                                    <button type="submit" class="btn"><span class="fa fa-search"
+                                            aria-hidden="true"></span></button>
+                                </form>
+                                <div class="browse-items">
+                                    <h3 class="hny-title two mt-md-5 mt-4">Tìm kiếm thường xuyên:</h3>
+                                    <ul class="search-items">
+                                        <li><a href="movies.html">Hành Động</a></li>
+                                        <li><a href="movies.html">Kịch</a></li>
+                                        <li><a href="movies.html">Gia Đình</a></li>
+                                        <li><a href="movies.html">Giật Gân</a></li>
+                                        <li><a href="movies.html">Hài Kịch</a></li>
+                                        <li><a href="movies.html">Lãng Mạn</a></li>
+                                        <li><a href="movies.html">Tv-Series</a></li>
+                                        <li><a href="movies.html">Kinh Dị</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="close" href="#close">×</a>
+                        </div>
+                        <!-- /search popup -->
+                        <!--/search-right-->
+
+                    </div>
+                    <div class="Login_SignUp" id="login"
+                        style="font-size: 2rem ; display: inline-block; position: relative;">
+                        <!-- <li class="nav-item"> -->
+                        <a class="nav-link" href="sign_in.html"><i class="fa fa-user-circle-o"></i></a>
+                        <!-- </li> -->
+                    </div>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--/breadcrumbs -->
+    <div class="w3l-breadcrumbs">
+        <nav id="breadcrumbs" class="breadcrumbs">
+            <div class="container page-wrapper">
+                <a href="index.html">Trang Chủ</a> » <span class="breadcrumb_last" aria-current="page">Về Chúng
+                    Tôi</span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="py-1">
+        <div class="container py-lg-4">
+            <div class="text-txt">
+                <div class="right-side">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 sub-two-right mt-5">
+                            <h1>Giới thiệu đề tài</h1>
+                            <p style="font-size:large">
+                                TOANVIPCINEMA là một website đặt vé xem phim trực tuyến, được xây dựng nhằm phục vụ cho
+                                đồ
+                                án môn Thực hành nhập môn Web và Ứng dụng tại Trường Đại học Công nghệ Sài Gòn (STU).
+                                <br><br>
+                                Ngày nay, nhu cầu giải trí, đặc biệt là xem phim tại rạp, ngày càng phổ biến ở nhiều độ
+                                tuổi. Việc đặt vé trực tuyến giúp người dùng tiết kiệm thời gian, lựa chọn trước ghế
+                                ngồi yêu thích, và dễ dàng cập nhật lịch chiếu phim mới nhất. Chính vì vậy, các hệ thống
+                                đặt vé xem phim trực tuyến đang trở thành xu hướng phổ biến.
+                                <br><br>
+                                Nhận thấy tầm quan trọng và tiềm năng phát triển của hình thức đặt vé trực tuyến, cùng
+                                với sở thích cá nhân về điện ảnh, em đã quyết định lựa chọn đề tài này để thực hiện đồ
+                                án. Mục tiêu của website là mang đến cho người dùng trải nghiệm đặt vé đơn giản, nhanh
+                                chóng, giao diện thân thiện và dễ sử dụng.
+                            </p>
+                            <br>
+                            <h1>Các chức năng đã thực hiện</h1>
+                            <p style="font-size:large">
+                                - Responsive thích ứng với PC, laptop, tablet và mobile.
+                                <br>
+                                - Thanh điều hướng (Navbar) chuyển thành Humberger trên tablet và mobile.
+                                <br>
+                                - Banner tự động sử dụng JavaScript (Bootstrap Carousel Plugin). <a
+                                    href="index.html">Demo</a>
+                                <br>
+                                - Chuyển đổi màu theme của giao diện (Sáng/Tối).
+                                <label class="theme-switch" for="checkbox" style="color: #df0e62;">Demo</label>
+                                <br>
+                                - Hiệu ứng hover cho các phần tử.
+                                <br>
+                                - Hiệu ứng nút cuộn lên đầu trang và hiện thị/ẩn dựa trên vị trí cuộn.
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 sub-two-right mt-5">
+                            <img id="logo" class="img-fluid" src="assets/images/logo/logo.png" alt="">
+                            <img class="img-fluid" src="assets/images/banner1.jpg" alt="">
+                            <img class="img-fluid" src="assets/images/banner2.jpg" alt="">
+                            <img class="img-fluid" src="assets/images/banner3.jpg" alt="">
+                            <img class="img-fluid" src="assets/images/banner4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w3l-footer">
+        <section class="footer-inner-main">
+            <div class="footer-hny-grids py-5">
+                <div class="container py-lg-4">
+                    <div class="text-txt">
+                        <div class="right-side">
+                            <div class="row footer-links">
+                                <div class="col-md-3 col-sm-6 sub-two-right mt-5">
+                                    <h6>Phim</h6>
+                                    <ul>
+                                        <li><a href="#">Phim</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                        <li><a href="#">English Movies</a></li>
+                                        <li><a href="#">Trailer</a></li>
+                                        <li><a href="#">Phim Sắp Chiếu</a></li>
+                                        <li><a href="Contact_Us.html">Liên Hệ Chúng Tôi</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 col-sm-6 sub-two-right mt-5">
+                                    <h6>Thông Tin</h6>
+                                    <ul>
+                                        <li><a href="index.html">Trang Chủ</a> </li>
+                                        <li><a href="about.html">Về Chúng Tôi</a> </li>
+                                        <li><a href="#">Tv Series</a> </li>
+                                        <li><a href="#">Blogs</a> </li>
+                                        <li><a href="sign_in.html">Đăng Nhập</a></li>
+                                        <li><a href="sign_up.html">Đăng Kí Tài Khoản</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2 col-sm-6 sub-two-right mt-5">
+                                    <h6>Chi Nhánh</h6>
+                                    <ul>
+                                        <li><a href="#">Việt Nam</a></li>
+                                        <li><a href="#">Pháp</a></li>
+                                        <li><a href="#">Vương quốc Anh</a></li>
+                                        <li><a href="#">Hoa Kỳ</a></li>
+                                        <li><a href="#">Hàn Quốc</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 col-sm-6 sub-two-right mt-5">
+                                    <h6>Cập Nhật Tin Tức Mới Nhất</h6>
+                                    <form action="#" class="subscribe mb-3" method="post">
+                                        <input type="email" name="email" placeholder="Nhập email của bạn" required="">
+                                        <button><span class="fa fa-envelope-o"></span></button>
+                                    </form>
+                                    <p>Nhập email của bạn và nhận tin tức mới nhất, cập nhật và ưu đãi đặc biệt từ chúng
+                                        tôi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row footer-about">
+                                <div class="col-md-12 col-12 footer-img mb-lg-0 mb-4">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11087.31525891653!2d106.68132754794783!3d10.737728044349366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1747046565641!5m2!1svi!2s"
+                                        width="100%" height="450" style="border:0;" allowfullscreen="0" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="below-section">
+                <div class="container">
+                    <div class="footer">
+                        <div class="columns text-lg-left">
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Họ và tên: Nguyễn Phước
+                                Nghĩa</p>
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Mã sinh viên: DH52201099</p>
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Email:
+                                dh52201099@student.stu.edu.vn</p>
+                            <p style="font-size: large;"><span class="fa fa-circle"></span> Lớp: D22_TH02</p>
+                        </div>
+
+                        <ul class="social text-lg-right">
+                            <li><a href="https://www.facebook.com" target="_blank"><span
+                                        class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><span
+                                        class="fa fa-instagram"></span></a></li>
+                            <li><a href="https://x.com" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.google.com" target="_blank"><span class="fa fa-google"></span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-arrow-up" aria-hidden="true"></span>
+            </button>
+        </section>
+    </footer>
+</body>
+
+</html>
